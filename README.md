@@ -59,6 +59,6 @@ Warning, disk space is low
 This project is licensed under the **MIT License**.
 
 ## Author
-- **Naman**  
-- GitHub: [Your Username](https://github.com/your-Namaannn001/)
+-**Naman**  
+- GitHub: https://github.com/your-Namaannn001/
 
