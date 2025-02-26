@@ -60,5 +60,5 @@ This project is licensed under the **MIT License**.
 
 ## Author
 -**Naman**  
-- GitHub: https://github.com/your-Namaannn001/
+- GitHub: https://github.com/your-Namaannn001
 
