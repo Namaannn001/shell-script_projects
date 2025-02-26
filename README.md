@@ -44,9 +44,10 @@ chmod +x Monitoring_Free_Ram_Space_And_Disk_Space.sh
    - `df -H` lists disk usage.
    - `grep "xvda16" | awk '{print $5}' | tr -d '%'` extracts the disk usage percentage.
    - If disk usage is **80% or higher**, a **warning** is displayed.
-
-## Example Output
 ```
+#### 4. Output
+```
+
 RAM space is sufficient - 1024 MB
 All good 45% used
 ```
@@ -59,6 +60,6 @@ Warning, disk space is low
 This project is licensed under the **MIT License**.
 
 ## Author
--**Naman**  
-- GitHub: https://github.com/your-Namaannn001
+**NAMAN**  
+GitHub: [Namaannn001](https://github.com/Namaannn001/)
 
