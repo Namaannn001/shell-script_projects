@@ -1,4 +1,4 @@
-# shell-script_projeects
+# shell-script_projects
 
 # Monitoring Free RAM Space and Disk Space in Linux
 
