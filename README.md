@@ -62,6 +62,8 @@ Warning, disk space is low
 
 This project automates the process of archiving older logs in a specified directory. The script identifies files larger than 1MB, compresses them using `gzip`, and moves them to an `archive` folder within the same directory. A cron job is used to execute this script daily at a scheduled time.
 
+I created a directory named `find_command`, where I added some files. The script scans this directory, and any files larger than 1MB are moved to the `archive` folder. The `archive` folder is created inside the `find_command` directory if it does not already exist.
+
 ## Steps Implemented in the Script
 
 1. Provide the path of the directory.
@@ -73,8 +75,6 @@ This project automates the process of archiving older logs in a specified direct
 7. Schedule a cron job to run the script daily at a specific time.
 
 ## Shell Script
-
-I created a `find_command` directory where I created the `Archive_older_logs.sh` file and added the required code. 
 
 Create a shell script file named `Archive_older_logs.sh` and write the following code in it:
 
@@ -106,7 +106,7 @@ To automate the execution of the script daily at a specified time, add the follo
 
 ## How to Use
 
-1. Create a shell script file named `Archive_older_logs.sh` inside the `find_command` directory.
+1. Create a shell script file named `Archive_older_logs.sh`.
 2. Write the necessary code inside the script.
 3. Ensure that the script has executable permissions:
    ```bash
