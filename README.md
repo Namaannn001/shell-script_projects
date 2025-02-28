@@ -1,6 +1,6 @@
 # shell-script_projects
 
-# Monitoring Free RAM Space and Disk Space in Linux
+# 1. Monitoring Free RAM Space and Disk Space in Linux
 
 ## Overview
 This shell script monitors the available **RAM space** and **disk space** on a Linux system. It provides alerts if the available memory or disk space falls below a certain threshold.
@@ -56,8 +56,77 @@ OR
 Warning, disk space is low
 ```
 
+# 2. Archive Older Logs in Shell Scripting
+
+## Overview
+
+This project automates the process of archiving older logs in a specified directory. The script identifies files larger than 1MB, compresses them using `gzip`, and moves them to an `archive` folder within the same directory. A cron job is used to execute this script daily at a scheduled time.
+
+## Steps Implemented in the Script
+
+1. Provide the path of the directory.
+2. Check if the directory exists.
+3. Create an `archive` folder if it is not already present.
+4. Find all files larger than 1MB.
+5. Compress each file using `gzip`.
+6. Move the compressed file to the `archive` folder.
+7. Schedule a cron job to run the script daily at a specific time.
+
+## Shell Script
+
+I created a `find_command` directory where I created the `Archive_older_logs.sh` file and added the required code. 
+
+Create a shell script file named `Archive_older_logs.sh` and write the following code in it:
+
+- Check if the specified directory exists.
+- Create an `archive` folder if it does not already exist.
+- Find files larger than 1MB in the directory.
+- Compress the identified files using `gzip`.
+- Move the compressed files to the `archive` folder.
+
+## Cron Job
+
+To automate the execution of the script daily at a specified time, add the following entry to your crontab:
+
+```bash
+31 13 * * * /home/ubuntu/shell-script_projects/Archive_older_logs.sh
+```
+
+### Explanation of the Cron Job
+
+- `31 13 * * *` → Runs the script at 13:31 (1:31 PM) every day (this is only an example; you can set the time according to your need).
+- The script path is specified as `/home/ubuntu/shell-script_projects/Archive_older_logs.sh`.
+
+## Requirements
+
+- Linux
+- Bash shell
+- `gzip` command
+- `cron` service enabled
+
+## How to Use
+
+1. Create a shell script file named `Archive_older_logs.sh` inside the `find_command` directory.
+2. Write the necessary code inside the script.
+3. Ensure that the script has executable permissions:
+   ```bash
+   chmod +x Archive_older_logs.sh
+   ```
+4. Manually run the script to verify functionality:
+   ```bash
+   ./Archive_older_logs.sh
+   ```
+5. Add the cron job to automate execution.
+
+## Notes
+
+- Ensure that the user executing the script has the necessary permissions for the directory.
+- Modify the `BASE` variable in the script to point to the desired directory.
+- The script only compresses files that are larger than 1MB.
+
 ## License
-This project is licensed under the **MIT License**.
+
+This project is open-source and available for modification as needed.
 
 ## Author
 **NAMAN**  
